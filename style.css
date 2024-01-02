@@ -1,3 +1,10 @@
+hr{
+border: 0;
+height: 4px;
+background-color: black;
+margin: 8;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
