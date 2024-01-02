@@ -50,7 +50,14 @@ $(document).ready(function () {
   
   localStorage.setItem(hourId, eventText)
 
-});
+  var confirmationMessage = $('<div class="confirmation-message">Appointment Added to localStorage ✔️ </div>');
+  $(this).parent().append(confirmationMessage)
+  setTimeout(function(){
+    confirmationMessage.fadeOut('slow', function() {
+      $(this).remove();
+    });
+  }, 3000);
+}); 
 
 $('.time-block').each(function() {
   var hourId = $(this).attr('id');
