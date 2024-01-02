@@ -40,6 +40,24 @@ $(document).ready(function () {
   });
   }
 
+  updateTimeBlocks();
+  setInterval(updateTimeBlocks, 60 * 1000);
 
 
+  $('.saveBtn').click(function() {
+    var hourId = $(this).parent().attr('id')
+    var eventText = $(this).siblings('.description').val();
+  
+  localStorage.setItem(hourId, eventText)
+
+});
+
+$('.time-block').each(function() {
+  var hourId = $(this).attr('id');
+  var savedEvent = localStorage.getItem(hourId);
+
+  if (savedEvent) {
+    $(this).find('.description').val(savedEvent);
+  }
+});
 });
