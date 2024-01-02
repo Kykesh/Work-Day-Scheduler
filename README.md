@@ -58,7 +58,7 @@ Here's how you can use the Work Day Scheduler:
 
 ## Deployed Application
 
-Check out the deployed application here: [Work Day Scheduler Live Site]()
+Check out the deployed application here: [Work Day Scheduler Live Site](https://kykesh.github.io/Work-Day-Scheduler/)
 
 ## License
 
